@@ -6,7 +6,7 @@ namespace SistemaNotasImperio.Models.Data
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-466P3UV;Database=ImperioMvc;Integrated Security=True;Encrypt=False");
+            optionsBuilder.UseSqlServer();
         }
 
         public DbSet<Empresa> Empresas { get; set; }
